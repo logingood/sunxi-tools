@@ -1,3 +1,16 @@
+# OS X compilation
+
+```
+brew install libusb
+brew install --cask gcc-arm-embedded
+
+pkg-config --libs libusb-1.0
+pkg-config --libs zlib
+
+make install-all
+```
+
+
 # sunxi-tools
 [![License](http://img.shields.io/badge/License-GPL-green.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.org/linux-sunxi/sunxi-tools.svg?branch=master)](https://travis-ci.org/linux-sunxi/sunxi-tools)
